@@ -22,7 +22,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <nav>
+    <%= link_to "Home", root_path %> |
+    <%= link_to "Microposts", microposts_path %>
+  </nav>
+
+  <%= yield %>
+</body>
+
 </html>
